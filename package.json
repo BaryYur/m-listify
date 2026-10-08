@@ -1,0 +1,25 @@
+{
+  "name": "m-listify",
+  "private": true,
+  "packageManager": "npm@11.12.1",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check",
+    "redis:up": "docker compose up -d redis",
+    "redis:down": "docker compose down",
+    "redis:logs": "docker compose logs -f redis"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "turbo": "^2.11.7"
+  }
+}
