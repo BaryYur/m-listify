@@ -24,7 +24,7 @@ This project is a monorepo managed with npm workspaces.
 │   │   ├── common/         # Shared utilities, decorators, and filters
 │   │   └── prisma/         # Database schema and migrations
 │   └── test/               # E2E and integration tests
-├── frontend/               # React (Vite) Application
+├── frontend/               # React (NextJS) Application
 │   ├── src/
 │   │   ├── app/            # Pages
 │   │   │   ├── (public)/   # For all users
