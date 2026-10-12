@@ -18,38 +18,38 @@ This project is a monorepo managed with npm workspaces.
 
 ```text
 .
-├── backend/                # NestJS API
+├── backend/                        # NestJS API
 │   ├── src/
-│   │   ├── modules/        # Domain modules (auth, user, task, task-list, etc.)
-│   │   ├── common/         # Shared utilities, decorators, and filters
-│   │   └── prisma/         # Database schema and migrations
-│   └── test/               # E2E and integration tests
-├── frontend/               # React (NextJS) Application
+│   │   ├── modules/                # Domain modules (auth, user, task, task-list, etc.)
+│   │   ├── common/                 # Shared utilities, decorators, and filters
+│   │   └── prisma/                 # Database schema and migrations
+│   └── test/                       # E2E and integration tests
+├── frontend/                       # React (NextJS) Application
 │   ├── src/
-│   │   ├── app/            # Pages
-│   │   │   ├── (public)/   # For all users
+│   │   ├── app/                    # Pages
+│   │   │   ├── (public)/           # For all users
 │   │   │   │   ├── page_1/
 │   │   │   │   │   ├── _components # Components specific for page_1 
 │   │   │   │   │   ├── layout.tsx
 │   │   │   │   │   └── page.tsx
 │   │   │   │   │
-│   │   │   ├── (private)/   # For authenticated user
+│   │   │   ├── (private)/          # For authenticated user
 │   │   │   │   └── page_1/
-│   │   │   │      ├── _components # Components specific for page_1 
+│   │   │   │      ├── _components  # Components specific for page_1 
 │   │   │   │      ├── layout.tsx
 │   │   │   │      └── page.tsx
 │   │   │   │ 
-│   │   ├── components/     # UI Components (shared and specific)
-│   │   ├── hooks/          # Custom React hooks
+│   │   ├── components/             # UI Components (shared and specific)
+│   │   ├── hooks/                  # Custom React hooks
 │   │   │   ├── ui/
 │   │   │   └── api/
-│   │   ├── context/        # Context store
-│   │   ├── store/          # Zustand store
-│   │   ├── types/          # Entities types
-│   │   ├── services/       # API communication layer (Axios)
-│   │   └── middleware.ts   # Auth middleware
-├── .github/workflows/      # CI/CD (lint, test, build automation)
-└── .husky/                 # Git hooks (lint-staged, commitlint, pre-push)
+│   │   ├── context/                # Context store
+│   │   ├── store/                  # Zustand store
+│   │   ├── types/                  # Entities types
+│   │   ├── services/               # API communication layer (Axios)
+│   │   └── middleware.ts           # Auth middleware
+├── .github/workflows/              # CI/CD (lint, test, build automation)
+└── .husky/                         # Git hooks (lint-staged, commitlint, pre-push)
 ```
 
 ---
