@@ -25,7 +25,7 @@ export const documentation = (app: INestApplication) => {
 
   const options = new DocumentBuilder()
     .setTitle("M-listify App API")
-    .setDescription("The documentation for the Filmify App backend API")
+    .setDescription("The documentation for the M-listify App backend API")
     .setVersion("1.0.0")
     .addCookieAuth("accessToken", {
       type: "apiKey",
