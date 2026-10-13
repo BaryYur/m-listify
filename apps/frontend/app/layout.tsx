@@ -2,6 +2,7 @@ import React from "react";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Changa_One, Inter, Poetsen_One } from "next/font/google";
 
 import "./globals.css";
 
@@ -13,6 +14,23 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-inter",
+});
+
+const changa = Changa_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-changa-one",
+});
+
+const poetsenOne = Poetsen_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-poetsen-one",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${changa.variable} ${poetsenOne.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
