@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      App for making lists of films
+    <div className="px-5">
+      <div className="container mx-auto">App for making lists of films</div>
     </div>
   );
 }

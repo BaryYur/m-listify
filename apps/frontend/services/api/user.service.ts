@@ -1,5 +1,4 @@
 import { apiClient } from "@/lib";
-
 import { User } from "@/types";
 
 const getUser = async () => {
