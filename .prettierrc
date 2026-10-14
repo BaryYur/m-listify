@@ -16,7 +16,8 @@
           "^react$",
           "<THIRD_PARTY_MODULES>",
           "^@/(.*)$",
-          "^[./]"
+          "^[./]",
+          "^lucide-react$"
         ],
         "importOrderParserPlugins": ["typescript", "jsx"],
         "importOrderSeparation": true,
