@@ -15,13 +15,11 @@ import { Search } from "lucide-react";
 export const SearchModal = () => {
   return (
     <Dialog>
-      <DialogTrigger asChild>
-        <Button size="lg" variant="secondary">
-          <Search />
-          Search
-        </Button>
+      <DialogTrigger render={<Button size="lg" variant="secondary" />}>
+        <Search />
+        Search
       </DialogTrigger>
-      <DialogContent className="top-8 min-w-65/100 translate-y-0">
+      <DialogContent className="top-8 min-w-75/100 translate-y-0 lg:min-w-[800px]">
         <DialogHeader>
           <DialogTitle>Search film</DialogTitle>
           <DialogDescription>Type to search</DialogDescription>
