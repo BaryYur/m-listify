@@ -1,7 +1,12 @@
+import { TvMinimalPlay } from "lucide-react";
+
 export const Logo = () => {
   return (
-    <span className="font-poetsen text-3xl font-semibold text-zinc-800 select-none">
-      M-listify
-    </span>
+    <div className="relative">
+      <span className="font-poetsen text-3xl font-medium text-zinc-800 select-none dark:text-zinc-100">
+        M-listify
+      </span>
+      <TvMinimalPlay className="absolute top-0 -right-4 size-4 text-blue-400" />
+    </div>
   );
 };
