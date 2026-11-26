@@ -8,22 +8,18 @@ import { Header } from "@/components/header";
 import { pageRoutes } from "@/config";
 import { cn } from "@/lib/utils";
 
-import { sourceSans } from "./fonts";
-
 export default function PublicLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const isLanding = pathname === pageRoutes.app.index;
+  const isLanding = pathname === `/${pageRoutes.landing}`;
 
   return (
     <div
       className={cn(
         "min-h-screen",
-        isLanding
-          ? `${sourceSans.variable} dark text-foreground font-source-sans bg-zinc-950`
-          : "bg-zinc-100 pt-20",
+        isLanding ? "dark text-foreground bg-zinc-950" : "bg-zinc-100 pt-20",
       )}
     >
-      <Header showSearch={!isLanding} />
+      <Header />
       {children}
     </div>
   );

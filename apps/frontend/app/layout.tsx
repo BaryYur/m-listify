@@ -1,7 +1,12 @@
 import React from "react";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Poetsen_One } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Poetsen_One,
+  Source_Sans_3,
+} from "next/font/google";
 
 import "./globals.css";
 
@@ -15,9 +20,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const inter = Inter({
+const sourceSans = Source_Sans_3({
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin", "cyrillic"],
-  variable: "--font-inter",
+  variable: "--font-source-sans-3",
+  fallback: ["Arial", "sans-serif"],
 });
 
 const poetsenOne = Poetsen_One({
@@ -39,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poetsenOne.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${sourceSans.variable} ${poetsenOne.variable} h-full antialiased`}
     >
       <body>{children}</body>
     </html>

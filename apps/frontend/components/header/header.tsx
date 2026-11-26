@@ -1,29 +1,27 @@
-import React from "react";
-
 import Link from "next/link";
 
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui";
 import { pageRoutes } from "@/config";
 
+import { HeaderNav } from "./header-nav";
 import { SearchModal } from "./search-modal";
 
-type HeaderProps = {
-  showSearch?: boolean;
-};
-
-export const Header: React.FC<HeaderProps> = ({ showSearch = true }) => {
+export const Header = () => {
   const isLoggedIn = false;
 
   return (
-    <header className="dark fixed top-0 left-0 z-20 w-full border-b border-white/5 bg-zinc-950/70 py-3 backdrop-blur-md">
+    <header className="dark fixed top-0 left-0 z-20 w-full border-b border-white/5 bg-zinc-950 py-3">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6">
-        <Link href={pageRoutes.app.index} className="hover:opacity-80">
-          <Logo />
-        </Link>
+        <div className="flex items-center gap-10">
+          <Link href={pageRoutes.app.index} className="hover:opacity-80">
+            <Logo />
+          </Link>
+          <HeaderNav />
+        </div>
 
         <div className="flex items-center gap-3">
-          {showSearch && <SearchModal />}
+          <SearchModal />
 
           {isLoggedIn ? (
             <div>User profile button</div>
