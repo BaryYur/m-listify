@@ -37,7 +37,8 @@ export const TrendingCard: React.FC<TrendingCardProps> = ({ trending }) => {
         size="lg"
         nativeButton={false}
         render={<Link href={`/${pageRoutes.signUp}`} />}
-        className="bg-brand hover:bg-brand-hover h-10 shrink-0 rounded-xl px-4 text-zinc-950"
+        variant="mainBlue"
+        className="h-10 shrink-0 px-4"
       >
         <Plus />
         Add to list

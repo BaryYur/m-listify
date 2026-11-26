@@ -41,7 +41,8 @@ export const Header = () => {
                 size="lg"
                 nativeButton={false}
                 render={<Link href={`/${pageRoutes.signUp}`} />}
-                className="bg-brand hover:bg-brand-hover h-10 rounded-xl px-4 text-zinc-950"
+                variant="mainBlue"
+                className="h-10 px-4"
               >
                 Sign up
               </Button>

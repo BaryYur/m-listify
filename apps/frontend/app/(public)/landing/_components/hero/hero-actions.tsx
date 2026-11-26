@@ -9,9 +9,10 @@ export const HeroActions = () => {
   return (
     <div className="flex flex-wrap items-center gap-3">
       <Button
+        variant="mainBlue"
         nativeButton={false}
         render={<Link href={`/${pageRoutes.signUp}`} />}
-        className={`${actionClassName} bg-brand hover:bg-brand-hover font-semibold text-zinc-950`}
+        className={`${actionClassName} font-semibold`}
       >
         Create account
       </Button>
