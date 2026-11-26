@@ -96,7 +96,7 @@ We use **GitHub Flow** and **Husky** to maintain high code quality:
 
 ```bash
 # Clone the repository
-git clone https://github.com/BaryYur/advanced-notes-app.git
+git clone https://github.com/BaryYur/m-listify.git
 
 # Install dependencies for the entire monorepo
 npm install
